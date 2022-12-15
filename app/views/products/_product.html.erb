@@ -1,0 +1,25 @@
+<div id="<%= dom_id product %>" class="bg-sky-500 p-5 rounded">
+  <div class="flex justify-between">
+    <p class="my-5 text-xl font-bold">
+      <%= product.name %>
+    </p>
+  </div>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Code:</strong>
+    <%= product.code %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Price:</strong>
+    <%= product.price %>
+  </p>
+
+  <% if action_name != "show" %>
+    <div class="flex">
+      <%= link_to "Show product", product, class: "rounded-lg py-3 px-5 bg-green-100 inline-block font-medium" %>
+      <%= link_to 'Edit product', edit_product_path(product), class: "rounded-lg py-3 ml-2 px-5 bg-yellow-100 inline-block font-medium" %>
+    </div>
+    <hr class="mt-6">
+  <% end %>
+</div>
