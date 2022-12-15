@@ -26,7 +26,7 @@ The root URL is set to the product#index page where you can add products and you
 
 #### Task 1:
 
-A basket object __has_many__ products, create the migrations necessary for this association.
+We want the ability to add products to a basket. Can you create the migrations to allow for this functionality.
 
 #### Task 2:
 
@@ -38,9 +38,13 @@ When a user clicks this button it should generate a new Basket object and associ
 
 Render the products in the basket on the right hand side of the products index page, the total of the basket should update as products are added to it.
 
+#### Task 4:
 
-#### Extra Credit:
+Add a test to the repo, you can choose the type of test and the testing framework you want to use.
 
-_This is optional only complete this step if you have enough time, we will discuss the thought process around this task in the interview even if you don't get to writing the code._
+
+#### New Feature:
+
+_This is not part of the tech test we will talk briefly about this feature request during the interview, we want to see your thought process if you were asked to develop this feature_
 
 The marketing department wants to add a deal to give users 10% off if they spend more than 100 euro. Build functionality to apply a discount if the total in the basket is greater than 100 euros.
