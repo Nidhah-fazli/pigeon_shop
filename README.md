@@ -23,6 +23,7 @@ It's not a requirement to use Tailwindcss, if you're more comfortable writing pl
 
 The root URL is set to the product#index page where you can add products and you'll see an empty space on the right hand side of the page for the basket.
 
+_There are no restrictions on how you complete these tasks, you can remove the current migrations and create your own if you have a different idea of how to structure the objects._
 
 #### Task 1:
 
