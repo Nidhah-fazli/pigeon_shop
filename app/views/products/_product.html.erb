@@ -19,7 +19,8 @@
     <div class="flex">
       <%= link_to "Show product", product, class: "rounded-lg py-3 px-5 bg-green-100 inline-block font-medium" %>
       <%= link_to 'Edit product', edit_product_path(product), class: "rounded-lg py-3 ml-2 px-5 bg-yellow-100 inline-block font-medium" %>
-    </div>
+      <%= button_to "Add to Basket", items_path(:product_id => product.id), class: "rounded-lg py-3 ml-2 px-5 bg-yellow-100 inline-block font-medium" %>
+      </div>
     <hr class="mt-6">
   <% end %>
 </div>
