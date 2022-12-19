@@ -2,9 +2,14 @@
   <%= @basket = basket %>
 </div>
 <ul>
+  <br>
   <% @basket.items.each do |item| %>
-    <li>Item: <%= item.product.name %></li>
+    <li class="my-5 text-l font-bold">Item: <%= item.product.name %></li>
+    <li>Product price: <%= item.product.price %> € </li>
     <li>Quantity: X <%= item.quantity %></li>
-   <hr>
+   <hr class="mt-6">
+   <br>
   <% end %>
 </ul>
+<br>
+<p class="my-5 text-xl font-bold">Sub total: <%= @basket.sub_total %> € </p>
