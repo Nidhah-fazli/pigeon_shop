@@ -1,0 +1,10 @@
+<div style="display:none;">
+  <%= @basket = basket %>
+</div>
+<ul>
+  <% @basket.items.each do |item| %>
+    <li>Item: <%= item.product.name %></li>
+    <li>Quantity: X <%= item.quantity %></li>
+   <hr>
+  <% end %>
+</ul>
